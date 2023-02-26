@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Root",
+    "children": [
+      {
+        "name": "Child 1",
+        "children": [
+          {
+            "name": "Grand Child"
+          }
+        ]
+      },  
+      {
+        "name": "Child 3",
+        "children": [
+          {
+            "name": "Grand Child",
+            "children": [
+              {
+                "name": "Great Grand Child 11111",
+                "children": [
+                  {
+                    "name": "Great Grand Child 22222222"
+                  },
+                  {
+                    "name": "Grand Grand Child 333333333333333"
+                  }
+                ]
+              },
+              {
+                "name": "Grand Grand Child 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Child 2"
+      }
+    ]
+  }
+]

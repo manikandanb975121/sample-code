@@ -1,0 +1,34 @@
+{
+  "scripts": {
+    "client": "cd client && npm start",
+    "client-local": "cd client && npm run start:local",
+    "install-client": "cd client && npm i --legacy-peer-deps",
+    "server": "cd server && npm run start:dev",
+    "install-server": "cd server && npm i",
+    "server-bash": "cd server && npm run start:dev-bash",
+    "start": "concurrently --kill-others \"npm run client\" \"npm run server\"",
+    "start-local": "concurrently --kill-others \"npm run client-local\" \"npm run server\"",
+    "start-bash": "concurrently --kill-others \"npm run client\" \"npm run server-bash\"",
+    "full-install": "npm i && concurrently \"npm run install-client\" \"npm run install-server\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Quantum-Ecosystem/quantum-performance-management.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Quantum-Ecosystem/quantum-performance-management/issues"
+  },
+  "homepage": "https://github.com/Quantum-Ecosystem/quantum-performance-management#readme",
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  },
+  "devDependencies": {
+    "eslint-plugin-jest-formatting": "^3.1.0",
+    "eslint-plugin-no-secrets": "^0.8.9",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-unused-imports": "^2.0.0"
+  }
+}

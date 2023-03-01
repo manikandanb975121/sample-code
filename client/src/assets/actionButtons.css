@@ -1,0 +1,380 @@
+.actionButtons{
+      
+    width: 100%;
+    height: 100 px;
+    font-family: Arial, Helvetica, sans-serif;
+    display:flex;
+}
+.actionButtons .leftSide{
+    flex:40%;
+    display:flex;
+    justify-content:left;
+    align-items: center;
+  
+    
+  } 
+  .actionButtons .rightSide{
+    flex:60%;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+   
+   } 
+
+  
+
+   .actionButtons .rightSide .py-3 .actionbutton{
+    display:inline-block;
+    margin-right: 0px;
+}
+.actionButtons .rightSide .btn {
+    display: none;
+
+} 
+.actionButtons .rightSide #menu-container{
+    display:flex;          
+ }
+
+.actionButtons .rightSide .py-3 .menu ul{
+     list-style: none;
+}  
+
+.actionButtons .rightSide .py-3 .menu ul li {
+    float:left;
+}
+@media only screen and (max-width: 1380px) and (min-width: 1233px){
+    .actionButtons .rightSide .py-3 {
+         
+          position: static;
+         
+          display: flex;
+          flex-direction:row;
+          width: 100%;
+          justify-content: center;
+   } 
+   .actionButtons .rightSide .py-3 .actionbutton{
+           font-size:11px;
+  }
+  .actionButtons .leftSide  .actionbutton {
+         font-size:11px;
+ }  
+
+
+  }
+  /* @media only screen and (max-width: 1268px) and (min-width: 1235px){
+    .actionButtons .leftSide  #textRef{
+        display:none;
+}
+  } */
+
+
+@media only screen and (max-width: 1233px) and (min-width: 991px){
+  .actionButtons .rightSide .py-3 {
+       
+        position: static;
+       
+        display: flex;
+        flex-direction:row;
+        width: 100%;
+        justify-content: center;
+ } 
+ /* .actionButtons .rightSide .py-3 .actionbutton{
+         font-size:15px;
+} */
+.actionButtons .rightSide .py-3 .actionbutton .text{
+    
+      display: none 
+  }
+  .actionButtons .leftSide  .text{
+          display:none;
+  }  
+ 
+}
+@media only screen and (max-width: 991px) and (min-width: 651px){
+
+    .rightSide  .py-3 .actionbutton{
+          display:none;
+       }
+
+       .actionButtons .rightSide #menu-container{
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      
+       }  
+       .actionButtons .rightSide   .btn{
+          display: flex;
+          font-weight: normal;
+          line-height: 1.25;
+          text-align: center;
+          white-space: nowrap;
+          vertical-align: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          border: 1px solid transparent;
+        
+          font-size: 1rem;
+          
+          border-radius: 50px !important;
+          transition: all 0.2s ease-in-out;
+          padding: 6px 15px;
+          border-color: rgb(16, 16, 17) !important;
+          justify-content: flex-start;
+          align-items: center;
+          --tw-text-opacity: 1;
+          /*color: rgba(36,145,255,var(--tw-text-opacity));*/
+          color: rgba(16,16,17,var(--tw-text-opacity));
+    }
+ .actionButtons .rightSide .btn span {
+    font-weight: 700;
+    vertical-align: middle;
+    font-size: 14px;
+    margin: 0 10px;
+  }
+  
+  .actionButtons .rightSide  .btn img {
+    border-radius: 90px;
+  }
+  .actionButtons .rightSide .py-3 .menu {
+    background: #ffffff;
+    border-radius: 8px;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 300px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+ 
+  }
+  .actionButtons .rightSide #menu-container .menu.active{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    z-index:10;
+    
+  }
+  .actionButtons .rightSide .py-3.menu ul {
+   
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .actionButtons .rightSide .py-3 .menu li {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .actionButtons .rightSide  .py-3 .menu li a {
+    text-decoration: none;
+    color: #333333;
+    padding: 15px 20px;
+    display: block;
+  }
+
+  .actionButtons .leftSide  .text{
+    display:none;
+}  
+
+
+
+
+}    
+         
+      
+
+
+
+@media only screen and (max-width:650px){  
+    .rightSide  .py-3 .actionbutton{
+          display:none;
+       }
+
+       .actionButtons .rightSide #menu-container{
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      
+       }  
+       .actionButtons .rightSide   .btn{
+          display: flex;
+          font-weight: normal;
+          line-height: 1.25;
+          text-align: center;
+          white-space: nowrap;
+          vertical-align: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          border: 1px solid transparent;
+        
+          font-size: 1rem;
+          
+          border-radius: 50px !important;
+          transition: all 0.2s ease-in-out;
+          padding: 6px 15px;
+          border-color: rgb(16, 16, 17) !important;
+          justify-content: flex-start;
+          align-items: center;
+          --tw-text-opacity: 1;
+          color: rgba(16,16,17,var(--tw-text-opacity));
+    }
+ .actionButtons .rightSide .btn span {
+    font-weight: 700;
+    vertical-align: middle;
+    font-size: 14px;
+    margin: 0 10px;
+  }
+  
+  .actionButtons .rightSide  .btn img {
+    border-radius: 90px;
+  }
+  .actionButtons .rightSide .py-3 .menu {
+    background: #ffffff;
+    border-radius: 8px;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 300px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+ 
+  }
+  .actionButtons .rightSide #menu-container .menu.active{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    z-index:10;
+    
+  }
+  .actionButtons .rightSide .py-3.menu ul {
+   
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .actionButtons .rightSide .py-3 .menu li {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .actionButtons .rightSide  .py-3 .menu li a {
+    text-decoration: none;
+    color: #333333;
+    padding: 15px 20px;
+    display: block;
+  }
+} 
+
+@media only screen and (max-width: 1379px) and (min-width: 1099px){
+
+    .actionButtons .leftSide   .textDisplay{
+          font-size:11px;
+ }
+ .actionButtons .leftSide   #textTicket{
+    font-size:11px;
+}
+ .actionButtons .leftSide  #textRef{
+    font-size:11px;
+   
+ }
+ .actionButtons .leftSide  #btn{
+       display:flex;
+       justify-content: center;
+       width:100px;
+       height:30px;
+       
+ }
+
+ .actionButtons .leftSide  .text{
+    display:none;
+}  
+
+}    
+@media only screen and (max-width: 1099px) and (min-width: 991px){
+    
+    .actionButtons .leftSide   .textDisplay{
+          font-size:11px;
+ }
+ .actionButtons .leftSide   #textTicket{
+    font-size:11px;
+}
+ .actionButtons .leftSide  #textRef{
+    font-size:11px;
+   
+ }
+ .actionButtons .leftSide  #btn{
+       display:flex;
+       justify-content: center;
+       width:100px;
+       height:30px;
+       
+ }
+
+ 
+
+}    
+@media only screen and (max-width: 991px) and (min-width: 651px){
+
+
+    .actionButtons .leftSide   .textDisplay{
+          display:11px
+ }
+ .actionButtons .leftSide   #textTicket{
+    font-size:none;
+}
+ .actionButtons .leftSide  #textRef{
+    display:none;
+ }
+ .actionButtons .leftSide  .hideText{
+    display:none;
+ }
+ .actionButtons .leftSide  #btn{
+    display:flex;
+    justify-content: center;
+    width:100px;
+    height:30px;
+    
+}
+
+}      
+
+@media only screen and (max-width:650px){ 
+    .actionButtons .leftSide   .text{
+          display:none;
+ }
+ 
+ 
+ .actionButtons .leftSide   .textDisplay{
+    display:none;
+}
+.actionButtons .leftSide   #textTicket{
+    display:none;
+}
+ .actionButtons .leftSide  #textRef{
+    display:none;
+ }
+ .actionButtons .leftSide  .hideText{
+    display:none;
+ }
+ .actionButtons .leftSide  #btn{
+    display:flex;
+    justify-content: center;
+    width:100px;
+    height:30px;
+    
+}
+}      
+    
+

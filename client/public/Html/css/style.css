@@ -1,0 +1,564 @@
+body{font-family: 'Poppins', sans-serif;important; background-color:#F3F5F9 !important;}
+
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+.pd_right_0{
+    padding-right:0px;
+}
+#sidebar {
+       min-width: 280px;
+    max-width: 280px;
+    background: #fff;
+    color: #fff;
+    transition: all 0.3s;
+    box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+}
+
+
+#sidebar.active {
+    margin-left: -280px;
+}
+
+#sidebar .sidebar-header {
+  padding: 20px;
+text-align: center;
+    
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+  
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+   padding: 25px 32px 25px 75px;
+    font-size:14px;
+    font-weight:500;
+    display: block;
+    text-decoration: none;
+    color:#717171;
+}
+#sidebar ul li a span.menu_icon{ 
+ margin-right:20px;
+    }
+
+
+
+#sidebar ul li a.active svg path{
+  fill:white !important;
+}
+
+
+#sidebar ul li a:hover .iconHvr{
+    fill:#fff !important;
+
+}
+#sidebar ul li a:hover{
+    background: #009FDF;
+color: #fff;
+}
+#sidebar ul.list-unstyled li a.logout{
+    margin-top: 140px;
+}
+#sidebar ul li a.active{
+     background: #009FDF;
+    color: #fff;
+}
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #6d7fcc;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a.download {
+    background: #fff;
+    color: #7386D5;
+}
+
+a.article,
+a.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+.container-fluid.pd_0{
+  padding:0px;
+}
+.navbar.dashboardheader{
+    padding:0px;
+}
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+.dashboardhead{
+        margin: 0px;
+    
+    margin-left: 20px;
+    font-size: 26px;
+}
+
+#sidebarCollapse{
+    border: none;
+    background: none;
+}
+
+.main_inner_section{
+      background: #FCFBFF;
+    min-height: 300px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    padding: 25px;
+    box-shadow: 0px 4px 10px #0000001f;
+
+}
+
+.dashboard_main{
+    margin-top:20px;
+}
+.reminder_section{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 6px;
+    grid-column-gap: 12px;
+
+}
+.reminder_box{
+/*    border: 1px solid #009FDF;
+    height: 150px;
+    border-radius:20px;
+    background:#009FDF;*/
+}
+.reminders_haeder{
+        margin-bottom: 30px;
+        position: relative;
+}
+.reminders_haeder h4{
+    font-size: 22px;
+    color: #444444;
+}
+.reminders_haeder p{
+    font-weight:300;
+}
+.reminders_haeder button{
+    position: absolute;
+    border: none;
+    background: none;
+    right: 0px;
+    top: 0px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #717171;
+}
+.left_section h5{
+    font-size: 9px;
+    color: #717171;
+    font-weight: 200;
+    line-height: 18px;
+}
+.left_section h5 span{
+    font-size: 12px;
+    font-weight: 600;
+    display: block;
+    color: #444444;
+}
+.reminder_content{
+        padding: 0px 10px 0px 10px;
+}
+
+.reminder_content h2{   
+     font-size: 22px;
+    color: #444444;
+}
+
+.reminder_content p{
+        font-size: 12px;
+    color: #DFDFDF;
+    font-weight: 300;
+}
+
+
+.right_section{
+    margin-left:20px;
+}
+.right_section h5{
+    font-size: 9px;
+    color: #717171;
+    font-weight: 200;
+    line-height: 18px;
+}
+.right_section h5 span{
+    font-size: 12px;
+    display: block;
+    font-weight: 600;
+    color: #444444;
+}
+.date_reminder{
+     padding: 10px 10px 10px 10px;
+    display: flex;
+}
+.competativegol{
+background: #fff;
+    border: 1px solid #D7D7D7;
+    display: flex;
+    align-items: center;
+    /* padding: 20px; */
+    justify-content: space-between;
+    border-radius: 20px;
+        margin-bottom: 10px;
+}
+
+.set-size{
+ font-size:5em;
+}
+.competativegol h3{
+    margin-left: 20px;
+    font-size: 20px;
+    margin-bottom: 0px;
+    color: #444444;
+}
+
+.pie-wrapper {
+  height: 1em;
+    
+    width: 1em;
+    float: left;
+    margin: 10px;
+    position: relative;
+}
+.pie-wrapper:nth-child(3n+1) {
+  clear: both;
+}
+.pie-wrapper .pie {
+  height: 100%;
+  width: 100%;
+  clip: rect(0, 1em, 1em, 0.5em);
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+.pie-wrapper .pie .half-circle {
+  height: 100%;
+  width: 100%;
+  border: 0.1em solid #3498db;
+  border-radius: 50%;
+  clip: rect(0, 0.5em, 1em, 0);
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+.pie-wrapper .label {
+  background: #34495e;
+  border-radius: 50%;
+  bottom: 0.4em;
+  color: #ecf0f1;
+  cursor: default;
+  display: block;
+  font-size: 0.25em;
+  left: 0.4em;
+  line-height: 2.8em;
+  position: absolute;
+  right: 0.4em;
+  text-align: center;
+  top: 0.6em;
+}
+.pie-wrapper .label .smaller {
+  color: #bdc3c7;
+  font-size: 0.45em;
+  padding-bottom: 20px;
+
+}
+.pie-wrapper .shadow {
+  height: 100%;
+  width: 100%;
+ border: 0.1em solid #FAB7324D;
+  border-radius: 50%;
+}
+.pie-wrapper.style-2 .label {
+    background: none;
+    color: #000;
+}
+.pie-wrapper.style-2 .label .smaller {
+    color: #000;
+    font-size: 20px;
+}
+.pie-wrapper.progress-30 .pie .half-circle {
+  border-color: #3498db;
+}
+.pie-wrapper.progress-30 .pie .left-side {
+  transform: rotate(108deg);
+}
+.pie-wrapper.progress-30 .pie .right-side {
+  display: none;
+}
+.pie-wrapper.progress-60 .pie {
+  clip: rect(auto, auto, auto, auto);
+}
+.pie-wrapper.progress-60 .pie .half-circle {
+  border-color: #9b59b6;
+}
+.pie-wrapper.progress-60 .pie .left-side {
+  transform: rotate(216deg);
+}
+.pie-wrapper.progress-60 .pie .right-side {
+  transform: rotate(180deg);
+}
+.pie-wrapper.progress-90 .pie {
+  clip: rect(auto, auto, auto, auto);
+}
+.pie-wrapper.progress-90 .pie .half-circle {
+  border-color: #e67e22;
+}
+.pie-wrapper.progress-90 .pie .left-side {
+  transform: rotate(324deg);
+}
+.pie-wrapper.progress-90 .pie .right-side {
+  transform: rotate(180deg);
+}
+.pie-wrapper.progress-45 .pie .half-circle {
+    border-color: #FAB732;
+}
+.pie-wrapper.progress-45 .pie .left-side {
+  transform: rotate(162deg);
+}
+.pie-wrapper.progress-45 .pie .right-side {
+  display: none;
+}
+.pie-wrapper.progress-75 .pie {
+  clip: rect(auto, auto, auto, auto);
+}
+.pie-wrapper.progress-75 .pie .half-circle {
+  border-color: #8e44ad;
+}
+.pie-wrapper.progress-75 .pie .left-side {
+  transform: rotate(270deg);
+}
+.pie-wrapper.progress-75 .pie .right-side {
+  transform: rotate(180deg);
+}
+.pie-wrapper.progress-95 .pie {
+  clip: rect(auto, auto, auto, auto);
+}
+.pie-wrapper.progress-95 .pie .half-circle {
+  border-color: #e74c3c;
+}
+.pie-wrapper.progress-95 .pie .left-side {
+  transform: rotate(342deg);
+}
+.pie-wrapper.progress-95 .pie .right-side {
+  transform: rotate(180deg);
+}
+
+.pie-wrapper--solid {
+  border-radius: 50%;
+  overflow: hidden;
+}
+.pie-wrapper--solid:before {
+  border-radius: 0 100% 100% 0/50%;
+  content: "";
+  display: block;
+  height: 100%;
+  margin-left: 50%;
+  transform-origin: left;
+}
+.pie-wrapper--solid .label {
+  background: transparent;
+}
+.pie-wrapper--solid.progress-65 {
+  background: linear-gradient(to right, #e67e22 50%, #34495e 50%);
+}
+.pie-wrapper--solid.progress-65:before {
+  background: #e67e22;
+  transform: rotate(126deg);
+}
+.pie-wrapper--solid.progress-25 {
+  background: linear-gradient(to right, #9b59b6 50%, #34495e 50%);
+}
+.pie-wrapper--solid.progress-25:before {
+  background: #34495e;
+  transform: rotate(-270deg);
+}
+.pie-wrapper--solid.progress-88 {
+  background: linear-gradient(to right, #3498db 50%, #34495e 50%);
+}
+.pie-wrapper--solid.progress-88:before {
+  background: #3498db;
+  transform: rotate(43.2deg);
+}
+.containerremindercheck {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  height:150px;
+ -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.containerremindercheck input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.containerremindercheck .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:auto;
+    background-color: #fff;
+    border: 1px solid #D7D7D7;
+    border-radius: 20px;
+}
+
+/* When the checkbox is checked, add a blue background */
+.containerremindercheck input:checked ~ .checkmark {
+     background-color: #009fdf;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.containerremindercheck input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.containerremindercheck .checkmark:after {
+    background: url(../img/check_tick.svg) no-repeat;
+ 
+right: 16px;
+top: 15px;
+width: 18px;
+height: 18px;
+ 
+}
+
+.containerremindercheck input:checked ~ .checkmark .left_section h5 ,.containerremindercheck input:checked ~ .checkmark .left_section h5 span{
+    color:#fff;
+}
+.containerremindercheck input:checked ~ .checkmark .right_section h5 ,.containerremindercheck input:checked ~ .checkmark .right_section h5 span{
+    color:#fff;
+}
+.containerremindercheck input:checked ~ .checkmark .reminder_content h2{
+    color:#fff;
+}
+
+
+.containerremindercheck input:checked ~ .checkmark .reminder_content p{
+     color:#DFDFDF;
+}
+.reminder_box::after{
+    background: #fff;
+    border-radius: 20px;
+    content: "";
+    width: 18px;
+    top: 16px;
+    right: 15px;
+    position: absolute;
+    height: 18px;
+    border: 1px solid #444444;
+}
+.containerremindercheck input:checked ~ .checkmark .reminder_box::after{
+    display: none;
+}
+
+.navbar-light .navbar-nav .nav-link.usersetting {
+  margin: 8px 15px;
+}
+
+
+.navbar-light .navbar-nav .nav-link.userprofile{
+        border: 1px solid #D9D9D9;
+    padding: 10px 11px;
+    border-radius: 4px;
+    color: #000;
+    font-size: 16px;
+}
+.userprofilepic{
+    margin-right:10px;
+}
+.refreshbt span{
+    margin-right:10px;
+}
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+
+/* amani style */
+#amani{
+    color: rgb(221, 245, 11) !important;
+}
+
+#amani_email{
+    color: rgb(97, 248, 105) !important;
+}

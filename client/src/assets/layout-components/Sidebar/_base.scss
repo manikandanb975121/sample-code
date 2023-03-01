@@ -1,0 +1,96 @@
+//  Variables
+
+.app-sidebar {
+  width: $sidebar-width;
+  flex-direction: column;
+  display: flex;
+  height: 100%;
+  z-index: 1115;
+  transition: width 0.75s cubic-bezier(0.685, 0.0473, 0.346, 1);
+  overflow-y: clip;
+  // position: relative;
+  @include media-breakpoint-up(lg) {
+    &--shadow {
+      box-shadow: $sidebar-shadow;
+    }
+  }
+  &--content {
+    overflow-y: auto;
+    overflow-x: visible;
+    height: 100%;
+  }
+
+  &--collapsed {
+    width: $sidebar-width-collapsed;
+
+    .app-sidebar--header {
+      justify-content: left;
+    }
+  }
+}
+
+// Fixed sidebar
+
+.app-sidebar-fixed {
+  .app-sidebar {
+    position: fixed;
+    position: relative;
+    height: 1000px; // triggers the sidebar when expanded to be shorter if set back to 100%
+    left: 0;
+
+    &--content {
+      // position: fixed;
+      height: 100%;
+    }
+  }
+}
+
+.app-sidebar-overlay {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .2s;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(12, 1, 78, .4);
+  z-index: 1113;
+
+  @include media-breakpoint-down(lg) {
+    &.is-active {
+      opacity: 1;
+      visibility: visible;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+// Responsive
+
+
+@include media-breakpoint-down(md) {
+  .app-sidebar {
+    position: fixed !important;
+    left: -$sidebar-width !important;
+  }
+
+  .app-sidebar-mobile-open {
+    .app-sidebar {
+      left: 0 !important;
+      box-shadow: $sidebar-shadow;
+    }
+  }
+}
+
+// Modifiers
+
+@import "modifiers/collapsed";
+
+// Themes
+
+@import "themes/dark";
+@import "themes/light";

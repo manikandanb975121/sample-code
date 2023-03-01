@@ -1,0 +1,37 @@
+ .outerContainer{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+}
+.outerContainer {
+  margin-bottom: 20px;
+}
+
+ .container1 {
+  
+    width: '200px';
+    height: '200px';
+}
+.container2{
+   
+   
+    width: '100px';
+    height: '100px';
+    
+}
+/* 
+.wrapper {
+   
+    width: 450px;
+  }
+.box {
+
+    display: flex;
+    flex-wrap: wrap;
+    margin:-10px;
+  }
+  .box>* {
+    flex: 1 1 160px;
+    margin: 10px;
+  } */
